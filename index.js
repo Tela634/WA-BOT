@@ -133,7 +133,7 @@ async function starts() {
       }
 
       const botNumber = client.user.jid
-      const ownerNumber = ["94xxxxxxxx@s.whatsapp.net"] // replace this with your number
+      const ownerNumber =  ["254701309409@s.whatsapp.net"] // replace this with your number
       const isGroup = from.endsWith('@g.us')
       const sender = isGroup ? mek.participant : mek.key.remoteJid
       const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -141,11 +141,11 @@ async function starts() {
       const groupId = isGroup ? groupMetadata.jid : ''
       const groupMembers = isGroup ? groupMetadata.participants : ''
       const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
-      const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
-      const isGroupAdmins = groupAdmins.includes(sender) || false
-      const isWelkom = isGroup ? welkom.includes(from) : false
-      const isNsfw = isGroup ? nsfw.includes(from) : false
-      const isSimi = isGroup ? samih.includes(from) : false
+      const isBotGroupAdmins = groupAdmins.includes(botNumber) || true
+      const isGroupAdmins = groupAdmins.includes(sender) || true
+      const isWelkom = isGroup ? welkom.includes(from) : true
+      const isNsfw = isGroup ? nsfw.includes(from) : true
+      const isSimi = isGroup ? samih.includes(from) : true
       const isOwner = ownerNumber.includes(sender)
       const isUrl = (url) => {
         return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
