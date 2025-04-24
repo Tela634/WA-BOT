@@ -1,6 +1,6 @@
 const help = (prefix) => {
-	return `🤡 HELLO GUYS ! 🤡
-	👻 I'm A BASIC WHATSAPP BOT REDEVELOPED BY DEVL MASTER 👻
+	return `🤡 HELLO  ! 🤡
+	👻 I'm A BASIC WHATSAPP BOT REDEVELOPED BY Eliud Njora👻
 	
 ❤  > User Commands < ❤
 	
@@ -55,7 +55,7 @@ const help = (prefix) => {
 
 ____________________________________
 
-BOT REDEVELOPED BY DEVIL MASTER - https://github.com/isuruwa`
+BOT REDEVELOPED BY Eliud Njora - https://github.com/Tela634`
 }
 
 exports.help = help
